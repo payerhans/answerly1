@@ -1,8 +1,8 @@
 from django.urls.conf import path
-from quanda import views
+from . import views
 
 app_name = 'quanda'
-url_patterns = [
-    #path('ask/', views.AskQuestionView.as_view(), name='ask'),
+urlpatterns = [
     path('ask', views.AskQuestionView.as_view(), name='ask'),
+    #path('ask/', views.AskQuestionView.as_view()),
 ]

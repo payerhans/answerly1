@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'quanda',
+    'markdownify',
     'crispy_forms',
 ]
 

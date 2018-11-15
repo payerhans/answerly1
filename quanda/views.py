@@ -1,8 +1,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http.response import HttpResponseRedirect, HttpResponseBadRequest
 from django.views.generic import CreateView
 
-from quanda.forms import QuestionForm
-from quanda.models import Question
+from .forms import QuestionForm
+from .models import Question
 
 # Create your views here.
 
