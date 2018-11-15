@@ -10,6 +10,7 @@ from .models import Question
 
 class AskQuestionView(LoginRequiredMixin, CreateView):
     form_class = QuestionForm
+    login_url = '/admin/login/'
     template_name = 'quanda/ask.html'
 
     def get_initial(self):
